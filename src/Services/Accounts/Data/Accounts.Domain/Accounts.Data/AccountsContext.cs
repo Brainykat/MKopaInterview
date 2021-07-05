@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Accounts.Data.Configurations;
+using Accounts.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 
 namespace Accounts.Data

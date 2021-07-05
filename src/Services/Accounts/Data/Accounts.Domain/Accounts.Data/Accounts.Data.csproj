@@ -16,4 +16,8 @@
     </PackageReference>
     <PackageReference Include="Polly" Version="7.2.1" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\BuildingBlocks\SharedBase\Common.Base.Shared\Common.Base.Shared.csproj" />
+    <ProjectReference Include="..\..\..\Domain\Accounts.Domain\Accounts.Domain.csproj" />
+  </ItemGroup>
 </Project>
