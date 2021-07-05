@@ -1,0 +1,20 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: rabbitmqservice
+  namespace: mkopanamespace
+spec:
+  selector:
+    app: rabbitmq
+  ports:
+    - name: ui
+      protocol: TCP
+      port: 15672
+      targetPort: 15672
+      nodePort: 31112
+    - name: service
+      port: 5672
+      targetPort: 5672
+      protocol: TCP
+      nodePort: 31111
+  type: LoadBalancer
