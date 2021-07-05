@@ -33,4 +33,11 @@
     <PackageReference Include="AspNetCore.HealthChecks.OpenIdConnectServer" Version="5.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\BuildingBlocks\EventBus\EventBus.Common.Shared\EventBus.Common.Shared.csproj" />
+    <ProjectReference Include="..\..\Data\Customers.Data\Customers.Data.csproj" />
+    <ProjectReference Include="..\..\Domain\Customers.Domain\Customers.Domain.csproj" />
+    <ProjectReference Include="..\..\Services\Customers.Services\Customers.Services.csproj" />
+  </ItemGroup>
+
 </Project>

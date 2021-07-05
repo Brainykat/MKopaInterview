@@ -54,6 +54,11 @@ namespace Common.Base.Shared
 
     public override int GetHashCode() => (GetType().ToString() + Id).GetHashCode();
     public DateTime DateCreated { get; set; } = DateTime.UtcNow;
-    
+    /// <summary>
+    /// 0 = new,
+    /// 1 = Authorized
+    /// 2 = Deleted
+    /// </summary>
+    public int Status { get; set; } = 0;
   }
 }

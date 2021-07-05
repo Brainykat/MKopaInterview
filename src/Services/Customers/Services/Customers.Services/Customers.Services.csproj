@@ -4,4 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\BuildingBlocks\SharedBase\Common.Shared.Services\Common.Shared.Services.csproj" />
+    <ProjectReference Include="..\..\..\..\BuildingBlocks\ViewsAndDtos\Customers.ViewsAndDtos\Customers.ViewsAndDtos.csproj" />
+    <ProjectReference Include="..\..\Data\Customers.Data\Customers.Data.csproj" />
+  </ItemGroup>
+
 </Project>

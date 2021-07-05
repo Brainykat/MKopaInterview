@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\..\BuildingBlocks\SharedBase\Common.Base.Shared\Common.Base.Shared.csproj" />
   </ItemGroup>
 
