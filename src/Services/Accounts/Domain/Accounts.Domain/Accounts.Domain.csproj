@@ -4,4 +4,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\BuildingBlocks\SharedBase\Common.Base.Shared\Common.Base.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
