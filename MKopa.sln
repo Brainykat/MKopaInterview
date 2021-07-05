@@ -63,37 +63,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kubernetes", "Kubernetes", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{12BA5DA5-88A9-43AA-8395-D1CC2AA538B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounts.Domain", "src\Services\Accounts\Data\Accounts.Domain\Accounts.Domain.csproj", "{7ACDA85B-969C-4CF9-98FF-D91BB45A4EEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounts.API", "src\Services\Accounts\API\Accounts.API\Accounts.API.csproj", "{929B3DEC-ADDE-4A9B-A1EC-EB39E9D44DE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounts.API", "src\Services\Accounts\API\Accounts.API\Accounts.API.csproj", "{929B3DEC-ADDE-4A9B-A1EC-EB39E9D44DE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounts.Domain", "src\Services\Accounts\Domain\Accounts.Domain\Accounts.Domain.csproj", "{1C0C7BFB-7EED-46BD-B692-4422F8926867}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounts.Domain", "src\Services\Accounts\Domain\Accounts.Domain\Accounts.Domain.csproj", "{1C0C7BFB-7EED-46BD-B692-4422F8926867}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounts.K8", "src\Services\Accounts\Kubernetes\Accounts.K8\Accounts.K8.csproj", "{38C1653D-FB4E-4F68-BBB6-2B15EE73D125}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounts.K8", "src\Services\Accounts\Kubernetes\Accounts.K8\Accounts.K8.csproj", "{38C1653D-FB4E-4F68-BBB6-2B15EE73D125}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounts.Services", "src\Services\Accounts\Services\Accounts.Services\Accounts.Services.csproj", "{5C941D3F-E96C-422E-ACCC-869C6A420168}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounts.Services", "src\Services\Accounts\Services\Accounts.Services\Accounts.Services.csproj", "{5C941D3F-E96C-422E-ACCC-869C6A420168}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers.Data", "src\Services\Customers\Data\Customers.Data\Customers.Data.csproj", "{31E7ACE9-F9E5-47F1-8015-41B7D68C5ECB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.API", "src\Services\Customers\API\Accounts.API\Customers.API.csproj", "{E0F32176-FBD7-4087-889B-96CC771A78EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers.Domain", "src\Services\Customers\Domain\Customers.Domain\Customers.Domain.csproj", "{3AB9D9BD-BFFB-4C75-BD81-0F325507B8C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.Data", "src\Services\Customers\Data\Customers.Data\Customers.Data.csproj", "{31E7ACE9-F9E5-47F1-8015-41B7D68C5ECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers.K8", "src\Services\Customers\Kubernetes\Customers.K8\Customers.K8.csproj", "{3F8C9799-C2CD-4F85-9377-9273BFB9CA62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.Domain", "src\Services\Customers\Domain\Customers.Domain\Customers.Domain.csproj", "{3AB9D9BD-BFFB-4C75-BD81-0F325507B8C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers.Services", "src\Services\Customers\Services\Customers.Services\Customers.Services.csproj", "{4A006320-A080-4785-92F3-43645263FCEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.K8", "src\Services\Customers\Kubernetes\Customers.K8\Customers.K8.csproj", "{3F8C9799-C2CD-4F85-9377-9273BFB9CA62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Data", "src\Services\Infrastructure\Data\Infrastructure.Data\Infrastructure.Data.csproj", "{F307F8D1-5EBA-439C-A309-2B4F7BD323B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.Services", "src\Services\Customers\Services\Customers.Services\Customers.Services.csproj", "{4A006320-A080-4785-92F3-43645263FCEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.API", "src\Services\Infrastructure\API\Infrastructure.API\Infrastructure.API.csproj", "{2030AC79-29ED-4985-BF42-A1A38BA4912D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data", "src\Services\Infrastructure\Data\Infrastructure.Data\Infrastructure.Data.csproj", "{F307F8D1-5EBA-439C-A309-2B4F7BD323B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Domain", "src\Services\Infrastructure\Domain\Infrastructure.Domain\Infrastructure.Domain.csproj", "{50B34412-AE83-457F-9318-EE7C93B3EFE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.API", "src\Services\Infrastructure\API\Infrastructure.API\Infrastructure.API.csproj", "{2030AC79-29ED-4985-BF42-A1A38BA4912D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.K8", "src\Services\Infrastructure\Kubernetes\Infrastructure.K8\Infrastructure.K8.csproj", "{667B4F4B-25F3-4C0C-9337-0F3CB1977993}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Domain", "src\Services\Infrastructure\Domain\Infrastructure.Domain\Infrastructure.Domain.csproj", "{50B34412-AE83-457F-9318-EE7C93B3EFE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Services", "src\Services\Infrastructure\Services\Infrastructure.Services\Infrastructure.Services.csproj", "{C6F733CA-BF09-4A60-AF58-4D9334D86B44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.K8", "src\Services\Infrastructure\Kubernetes\Infrastructure.K8\Infrastructure.K8.csproj", "{667B4F4B-25F3-4C0C-9337-0F3CB1977993}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Services", "src\Services\Infrastructure\Services\Infrastructure.Services\Infrastructure.Services.csproj", "{C6F733CA-BF09-4A60-AF58-4D9334D86B44}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loaning.API", "src\Services\Loaning\API\Loaning.API\Loaning.API.csproj", "{7CE96801-E0A6-4C79-857D-1D0E21BD50EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loaning.API", "src\Services\Loaning\API\Loaning.API\Loaning.API.csproj", "{7CE96801-E0A6-4C79-857D-1D0E21BD50EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LedgerServices", "LedgerServices", "{88993C04-6046-4950-980A-7EE18A6934D9}"
 EndProject
@@ -107,37 +103,41 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kubernetes", "Kubernetes", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{03D8C496-0FA7-480F-B78C-9A9C3BAC0ECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledgers.API", "src\Services\Ledgers\API\Ledgers.API\Ledgers.API.csproj", "{D74838C8-4577-4AD2-9C72-9632E8E09B07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ledgers.API", "src\Services\Ledgers\API\Ledgers.API\Ledgers.API.csproj", "{D74838C8-4577-4AD2-9C72-9632E8E09B07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledgers.Data", "src\Services\Ledgers\Data\Ledgers.Data\Ledgers.Data.csproj", "{E1BA5D9D-DC12-4EF3-A957-9AED9CDCE7F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ledgers.Data", "src\Services\Ledgers\Data\Ledgers.Data\Ledgers.Data.csproj", "{E1BA5D9D-DC12-4EF3-A957-9AED9CDCE7F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledgers.Domain", "src\Services\Ledgers\Domain\Ledgers.Domain\Ledgers.Domain.csproj", "{EC736455-66A0-48D7-AE33-9001710D968C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ledgers.Domain", "src\Services\Ledgers\Domain\Ledgers.Domain\Ledgers.Domain.csproj", "{EC736455-66A0-48D7-AE33-9001710D968C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledgers.K8", "src\Services\Ledgers\Kubernetes\Ledgers.K8\Ledgers.K8.csproj", "{3E379447-C701-4FD9-9EB6-647D358CBCA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ledgers.K8", "src\Services\Ledgers\Kubernetes\Ledgers.K8\Ledgers.K8.csproj", "{3E379447-C701-4FD9-9EB6-647D358CBCA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledgers.Services", "src\Services\Ledgers\Services\Ledgers.Services\Ledgers.Services.csproj", "{2BBF0293-6006-44B9-8365-4EE511998C56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ledgers.Services", "src\Services\Ledgers\Services\Ledgers.Services\Ledgers.Services.csproj", "{2BBF0293-6006-44B9-8365-4EE511998C56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loaning.Data", "src\Services\Loaning\Data\Loaning.Data\Loaning.Data.csproj", "{ED907F5A-AB8E-4450-A8F0-8824B9990847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loaning.Data", "src\Services\Loaning\Data\Loaning.Data\Loaning.Data.csproj", "{ED907F5A-AB8E-4450-A8F0-8824B9990847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loaning.Domain", "src\Services\Loaning\Domain\Loaning.Domain\Loaning.Domain.csproj", "{7E2210DA-F3A8-49CE-B5F9-7890C592AD2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loaning.Domain", "src\Services\Loaning\Domain\Loaning.Domain\Loaning.Domain.csproj", "{7E2210DA-F3A8-49CE-B5F9-7890C592AD2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loaning.K8", "src\Services\Loaning\Kubernetes\Loaning.K8\Loaning.K8.csproj", "{1EFC01AA-525C-42E4-9A4C-402A20388818}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loaning.K8", "src\Services\Loaning\Kubernetes\Loaning.K8\Loaning.K8.csproj", "{1EFC01AA-525C-42E4-9A4C-402A20388818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loaning.Services", "src\Services\Loaning\Services\Loaning.Services\Loaning.Services.csproj", "{B29B712F-6707-4C54-800A-948FFF1BADE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loaning.Services", "src\Services\Loaning\Services\Loaning.Services\Loaning.Services.csproj", "{B29B712F-6707-4C54-800A-948FFF1BADE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFF.API", "src\Bffs\BFF.API\BFF.API.csproj", "{2938C1F1-DA71-405E-9F5A-0394CF5F4C85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BFF.API", "src\Bffs\BFF.API\BFF.API.csproj", "{2938C1F1-DA71-405E-9F5A-0394CF5F4C85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFF.K8", "src\Bffs\BFF.K8\BFF.K8.csproj", "{7993DA22-3232-489A-91B3-B2F4E66CE278}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BFF.K8", "src\Bffs\BFF.K8\BFF.K8.csproj", "{7993DA22-3232-489A-91B3-B2F4E66CE278}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedBase", "SharedBase", "{92F309F3-8AD0-41D8-8741-9B06E2375769}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{E6BF98E8-3FE9-4D87-9575-FA56A81C99F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Base.Shared", "src\BuildingBlocks\SharedBase\Common.Base.Shared\Common.Base.Shared.csproj", "{9D297DC0-3AF4-4D08-9B7F-027BA2412E19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Base.Shared", "src\BuildingBlocks\SharedBase\Common.Base.Shared\Common.Base.Shared.csproj", "{9D297DC0-3AF4-4D08-9B7F-027BA2412E19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Common.Shared", "src\BuildingBlocks\EventBus\EventBus.Common.Shared\EventBus.Common.Shared.csproj", "{33B32917-FD94-4A85-B123-FC5D599BDD13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Common.Shared", "src\BuildingBlocks\EventBus\EventBus.Common.Shared\EventBus.Common.Shared.csproj", "{33B32917-FD94-4A85-B123-FC5D599BDD13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthUI", "src\Health\HealthUI\HealthUI.csproj", "{86355695-EE1C-4225-827B-2EE75FACF5BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthUI", "src\Health\HealthUI\HealthUI.csproj", "{86355695-EE1C-4225-827B-2EE75FACF5BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.API", "src\Services\Customers\API\Customers.API\Customers.API.csproj", "{5C69B28C-DB88-4D53-B18F-E5FE66DAE4EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounts.Data", "src\Services\Accounts\Data\Accounts.Domain\Accounts.Data\Accounts.Data.csproj", "{7C748940-0171-403A-BA6E-151206B62EF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -145,10 +145,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7ACDA85B-969C-4CF9-98FF-D91BB45A4EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7ACDA85B-969C-4CF9-98FF-D91BB45A4EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7ACDA85B-969C-4CF9-98FF-D91BB45A4EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7ACDA85B-969C-4CF9-98FF-D91BB45A4EEE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{929B3DEC-ADDE-4A9B-A1EC-EB39E9D44DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{929B3DEC-ADDE-4A9B-A1EC-EB39E9D44DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{929B3DEC-ADDE-4A9B-A1EC-EB39E9D44DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -165,10 +161,6 @@ Global
 		{5C941D3F-E96C-422E-ACCC-869C6A420168}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C941D3F-E96C-422E-ACCC-869C6A420168}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C941D3F-E96C-422E-ACCC-869C6A420168}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0F32176-FBD7-4087-889B-96CC771A78EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0F32176-FBD7-4087-889B-96CC771A78EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0F32176-FBD7-4087-889B-96CC771A78EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0F32176-FBD7-4087-889B-96CC771A78EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{31E7ACE9-F9E5-47F1-8015-41B7D68C5ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{31E7ACE9-F9E5-47F1-8015-41B7D68C5ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31E7ACE9-F9E5-47F1-8015-41B7D68C5ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -265,6 +257,14 @@ Global
 		{86355695-EE1C-4225-827B-2EE75FACF5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86355695-EE1C-4225-827B-2EE75FACF5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86355695-EE1C-4225-827B-2EE75FACF5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C69B28C-DB88-4D53-B18F-E5FE66DAE4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C69B28C-DB88-4D53-B18F-E5FE66DAE4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C69B28C-DB88-4D53-B18F-E5FE66DAE4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C69B28C-DB88-4D53-B18F-E5FE66DAE4EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C748940-0171-403A-BA6E-151206B62EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C748940-0171-403A-BA6E-151206B62EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C748940-0171-403A-BA6E-151206B62EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C748940-0171-403A-BA6E-151206B62EF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -298,12 +298,10 @@ Global
 		{E4F5D87D-4CFD-4B7B-BCBF-652BE7C7FCD4} = {726C516A-C9B7-4F5D-815F-A60E8514217F}
 		{2FE65BB3-269D-4139-91CB-FFE9ECBCB3A2} = {726C516A-C9B7-4F5D-815F-A60E8514217F}
 		{12BA5DA5-88A9-43AA-8395-D1CC2AA538B3} = {726C516A-C9B7-4F5D-815F-A60E8514217F}
-		{7ACDA85B-969C-4CF9-98FF-D91BB45A4EEE} = {16BCAC1B-A85A-4873-BCCA-169085564208}
 		{929B3DEC-ADDE-4A9B-A1EC-EB39E9D44DE3} = {D31462E4-ACD7-4D34-8090-FD6A6F4B99CA}
 		{1C0C7BFB-7EED-46BD-B692-4422F8926867} = {B75467A1-FF9F-4B0B-A887-2849A07198F4}
 		{38C1653D-FB4E-4F68-BBB6-2B15EE73D125} = {39889D84-906C-4002-83C8-D00B69E79F30}
 		{5C941D3F-E96C-422E-ACCC-869C6A420168} = {517E52B0-C73B-4583-9DEF-6BC7D83D3E11}
-		{E0F32176-FBD7-4087-889B-96CC771A78EE} = {760E41EF-AF4B-4A94-91F8-CD7D4C6393D3}
 		{31E7ACE9-F9E5-47F1-8015-41B7D68C5ECB} = {5A783132-5675-4F54-B90B-F40E3C5CFE1B}
 		{3AB9D9BD-BFFB-4C75-BD81-0F325507B8C8} = {5F4E69D3-F947-49AB-A8E8-0F2EBBCE730D}
 		{3F8C9799-C2CD-4F85-9377-9273BFB9CA62} = {AF440977-9A52-432C-985A-E5C32FA49997}
@@ -336,6 +334,8 @@ Global
 		{9D297DC0-3AF4-4D08-9B7F-027BA2412E19} = {92F309F3-8AD0-41D8-8741-9B06E2375769}
 		{33B32917-FD94-4A85-B123-FC5D599BDD13} = {E6BF98E8-3FE9-4D87-9575-FA56A81C99F6}
 		{86355695-EE1C-4225-827B-2EE75FACF5BF} = {FED55399-07FC-4D0C-8439-54B0215154CE}
+		{5C69B28C-DB88-4D53-B18F-E5FE66DAE4EF} = {760E41EF-AF4B-4A94-91F8-CD7D4C6393D3}
+		{7C748940-0171-403A-BA6E-151206B62EF2} = {16BCAC1B-A85A-4873-BCCA-169085564208}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2D9A57E-7780-4020-AD93-54893C091611}
