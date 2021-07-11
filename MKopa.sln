@@ -135,21 +135,26 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Common.Shared", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthUI", "src\Health\HealthUI\HealthUI.csproj", "{86355695-EE1C-4225-827B-2EE75FACF5BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.API", "src\Services\Customers\API\Customers.API\Customers.API.csproj", "{5C69B28C-DB88-4D53-B18F-E5FE66DAE4EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers.API", "src\Services\Customers\API\Customers.API\Customers.API.csproj", "{5C69B28C-DB88-4D53-B18F-E5FE66DAE4EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounts.Data", "src\Services\Accounts\Data\Accounts.Domain\Accounts.Data\Accounts.Data.csproj", "{7C748940-0171-403A-BA6E-151206B62EF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounts.Data", "src\Services\Accounts\Data\Accounts.Domain\Accounts.Data\Accounts.Data.csproj", "{7C748940-0171-403A-BA6E-151206B62EF2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewsAndDtos", "ViewsAndDtos", "{2374D031-E3A9-4A28-B206-86EAAC88CE6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.ViewsAndDtos", "src\BuildingBlocks\ViewsAndDtos\Customers.ViewsAndDtos\Customers.ViewsAndDtos.csproj", "{8FF66D98-F0D7-4FF9-BF08-1B5F345E9E2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers.ViewsAndDtos", "src\BuildingBlocks\ViewsAndDtos\Customers.ViewsAndDtos\Customers.ViewsAndDtos.csproj", "{8FF66D98-F0D7-4FF9-BF08-1B5F345E9E2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Shared.Services", "src\BuildingBlocks\SharedBase\Common.Shared.Services\Common.Shared.Services.csproj", "{D8F8B4F5-F770-4C4E-B9AC-D665FA1947AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Shared.Services", "src\BuildingBlocks\SharedBase\Common.Shared.Services\Common.Shared.Services.csproj", "{D8F8B4F5-F770-4C4E-B9AC-D665FA1947AF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionKubernetes", "SolutionKubernetes", "{132069D5-2815-4F53-8335-134AFFD08801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soln.K8", "src\SolnK8\Soln.K8\Soln.K8.csproj", "{A007CABF-D948-4C8E-8FA3-015CADD06A56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soln.K8", "src\SolnK8\Soln.K8\Soln.K8.csproj", "{A007CABF-D948-4C8E-8FA3-015CADD06A56}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2743346B-D781-4648-AAF1-FCAD3AC3944E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".circleci", ".circleci", "{04298CDD-D98B-411B-B589-61F2EC2BDF0F}"
+	ProjectSection(SolutionItems) = preProject
+		config.yaml = config.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
