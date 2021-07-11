@@ -154,6 +154,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".circleci", ".circleci", "{04298CDD-D98B-411B-B589-61F2EC2BDF0F}"
 	ProjectSection(SolutionItems) = preProject
 		config.yaml = config.yaml
+		.circleci\config.yaml = .circleci\config.yaml
 	EndProjectSection
 EndProject
 Global
