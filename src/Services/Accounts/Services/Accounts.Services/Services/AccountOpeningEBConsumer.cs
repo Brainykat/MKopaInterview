@@ -1,4 +1,5 @@
 ﻿using Accounts.Domain.Entities;
+using Common.Shared.Services;
 using EventBus.Common.Shared.Configurations;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -70,7 +71,7 @@ namespace Accounts.Services.Services
         {
           var content = Encoding.UTF8.GetString(ea.Body.ToArray());
           logger.LogInformation("New Event on ClientPaymentQue Queued message {j}", content);
-          //var queDto = JsonConvert.DeserializeObject<ClientPaymentRabbitDto>(content);
+          var queDto = JsonConvert.DeserializeObject<object>(content);
 
           var consume = await HandleMessage(queDto);
           if (consume)

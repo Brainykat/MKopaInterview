@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\BuildingBlocks\EventBus\EventBus.Common.Shared\EventBus.Common.Shared.csproj" />
     <ProjectReference Include="..\..\..\..\BuildingBlocks\SharedBase\Common.Shared.Services\Common.Shared.Services.csproj" />
     <ProjectReference Include="..\..\..\..\BuildingBlocks\ViewsAndDtos\Customers.ViewsAndDtos\Customers.ViewsAndDtos.csproj" />
     <ProjectReference Include="..\..\Data\Customers.Data\Customers.Data.csproj" />

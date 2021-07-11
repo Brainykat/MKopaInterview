@@ -1,9 +1,5 @@
 ﻿using Common.Base.Shared;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Customers.Domain.Entities
 {
@@ -11,7 +7,7 @@ namespace Customers.Domain.Entities
   {
     public static Customer Create(string firstName, string lastName, DateTime dateOfBirth, string idNumber,
       string phoneNumber) => new Customer(firstName, lastName, dateOfBirth, idNumber, phoneNumber);
-    private Customer(string firstName, string lastName, DateTime dateOfBirth, string idNumber, 
+    private Customer(string firstName, string lastName, DateTime dateOfBirth, string idNumber,
       string phoneNumber)
     {
       FirstName = firstName ?? throw new ArgumentNullException(nameof(firstName));
@@ -23,9 +19,9 @@ namespace Customers.Domain.Entities
     }
     private Customer() { }
     public string FirstName { get; set; }
-   public string LastName {get;set;}
-   public DateTime DateOfBirth {get;set;}
-   public string IdNumber {get;set;}
-   public string PhoneNumber {get;set;}
+    public string LastName { get; set; }
+    public DateTime DateOfBirth { get; set; }
+    public string IdNumber { get; set; }
+    public string PhoneNumber { get; set; }
   }
 }

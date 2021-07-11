@@ -17,10 +17,12 @@ namespace Customers.Services.Services
   {
     private readonly CustomerRepo repo;
     private readonly ILogger<CustomerService> logger;
-    public CustomerService(CustomerRepo repo, ILogger<CustomerService> logger)
+    private readonly ICustomerEventProducer eventProducer;
+    public CustomerService(CustomerRepo repo, ILogger<CustomerService> logger, ICustomerEventProducer eventProducer)
     {
       this.repo = repo ?? throw new ArgumentNullException(nameof(repo));
       this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
+      this.eventProducer = eventProducer;
     }
     public async Task<List<Customer>> GetCustomers() => await repo.GetCustomers();
     public async Task<Customer> GetCustomer(Guid id) => await repo.GetCustomer(id);
@@ -32,6 +34,7 @@ namespace Customers.Services.Services
         var customer = Customer.Create(dto.FirstName, dto.LastName, dto.DateOfBirth, dto.IdNumber, dto.PhoneNumber);
         await repo.AddCustomer(customer);
         //UNDONE: Raise Account opening event
+        eventProducer.RaisePaymentEvent(customer);
         return 201;
       }
       catch (Exception ex)

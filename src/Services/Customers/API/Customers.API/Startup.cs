@@ -3,6 +3,7 @@ using Customers.API.Helpers;
 using Customers.Data;
 using Customers.Data.Repositories;
 using Customers.Domain.Interfaces;
+using Customers.Services.EBServices;
 using Customers.Services.Interfaces;
 using Customers.Services.Services;
 using EventBus.Common.Shared.Configurations;
@@ -57,6 +58,7 @@ namespace Customers.API
       services.AddCustomHealthCheck(Configuration);
       services.AddTransient<ICustomerRepo, CustomerRepo>();
       services.AddTransient<ICustomerService, CustomerService>();
+      services.AddTransient<ICustomerEventProducer, CustomerEventProducer>();
 
       services.AddAdminApiCors(customersApiConfiguration);
       services.AddControllers()
