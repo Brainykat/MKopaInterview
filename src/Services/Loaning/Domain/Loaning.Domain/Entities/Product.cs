@@ -1,5 +1,6 @@
 ﻿using Common.Base.Shared;
 using Common.Base.Shared.Enums;
+using Common.Base.Shared.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace Loaning.Domain.Entities
   {
     public static Product Create(string name, string description, ProductType type) =>
       new Product(name, description, type);
+    public void AddLoan(Guid customerId, decimal maximumRepaymentPeriod, decimal defaultRate, Money maximumValue)
+      => Loans.Add(Loan.Create(customerId, Id, maximumRepaymentPeriod, defaultRate,maximumValue));
     private Product(string name, string description, ProductType type)
     {
       Name = name ?? throw new ArgumentNullException(nameof(name));

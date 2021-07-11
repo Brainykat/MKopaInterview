@@ -17,11 +17,13 @@ spec:
         image: brainykatsys.azurecr.io/accountsapi
         imagePullPolicy: Always
         resources:
+          requests:
+              cpu: 15m
           limits:
             memory: 250Mi
-            cpu: 250m
+            cpu: 30m
         ports:
         - containerPort: 80
         #envFrom:
         #    - configMapRef:
-        #        name: clients-api-config
+        #        name: accounts-api-config
