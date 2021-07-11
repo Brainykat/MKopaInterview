@@ -6,3 +6,10 @@ services:
     build:
       context: .
       dockerfile: src/Services/Accounts/API/Accounts.API/Dockerfile
+
+  customers.api:
+    image: ${DOCKER_REGISTRY-}customersapi
+    build:
+      context: .
+      dockerfile: src/Services/Customers/API/Customers.API/Dockerfile
+
